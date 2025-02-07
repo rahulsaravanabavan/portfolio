@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="portfolio.html">Home</a>
+                <a href="projectGIS.html">GIS Projects</a>
+                <a href="projectUX.html">UX Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <section class="project-section">
+        <div class="project-image">
+            <video width="420" height="240" autoplay muted>
+                <source src="./assets/prototype.webm" type="video/webm">
+              Your browser does not support the video tag.
+              </video>
+        </div>
+        <div class="project-content">
+            <h2>Blackboard Grades Section</h2>
+            <p>Through redesigning the grades section in Blackboard, 
+                I gained valuable insights into user-centered design, particularly 
+                in identifying and addressing usability gaps in educational platforms. 
+                I applied Nielsen’s heuristics and gathered feedback from students to understand 
+                their pain points, such as difficulties with grade weightings, lack of 
+                clear feedback visibility, and challenges in comparing grades with classmates. 
+                The struggle was in balancing comprehensive functionality with a streamlined, 
+                user-friendly interface, especially when optimizing for both desktop and mobile 
+                experiences. Overcoming these challenges involved iterative prototyping, refining 
+                interactions, and ensuring the final design supported clear, actionable feedback 
+                to enhance students' learning outcomes. This project strengthened my skills in user 
+                research, prototyping, and iterative design, highlighting the importance of continuous
+                 user testing to create intuitive and effective solutions.
+            </p>
+            <a href="https://www.figma.com/proto/GHk5QS9EAzTQwgb0wr01BL/UX_Prototyping?page-id=31%3A251&node-id=32-403&p=f&viewport=9%2C53%2C0.2&t=8i99BBbM33qabsxr-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=32%3A403" target="_blank">
+                <button>Learn More</button>
+            </a>
+        </div>
+    </section>
+
+    <section class="project-section2">
+        <div class="project-image2">
+            <img src="./assets/prototype2.gif" alt="Mobile prototype">
+        </div>
+        <div class="project-content2">
+            <h2>This is a mobile prototype for the same section</h2>
+            <p>In designing the mobile prototype for Blackboard's grades section, 
+                I deepened my understanding of mobile-first design principles and the unique 
+                challenges of creating a responsive, user-friendly interface for students. Through 
+                user feedback and my research, I identified key pain points like difficulty navigating 
+                grade breakdowns and accessing timely feedback. The struggle was in optimizing the interface
+                 to deliver essential information clearly on a smaller screen while ensuring intuitive 
+                 navigation. I focused on simplifying interactions, such as incorporating a course 
+                 carousel and prominently displaying feedback, without overwhelming the user. 
+                 Iterating the design for mobile required careful consideration of touch interactions, 
+                 visual hierarchy, and space constraints, ultimately leading to a streamlined prototype 
+                 that aims to enhance student engagement and support better learning outcomes. 
+                 This experience reinforced the importance of user testing, adaptability, and designing 
+                 for varied screen sizes to meet the needs of diverse users.
+            </p>
+            <a href="https://www.figma.com/proto/GHk5QS9EAzTQwgb0wr01BL/UX_Prototyping?page-id=0%3A1&node-id=5-194&p=f&viewport=228%2C185%2C0.17&t=2WI0kSPAZYUyE0uS-1&scaling=scale-down&content-scaling=fixed&starting-point-node-id=5%3A194" target="_blank">
+                <button>Learn More</button>
+            </a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Rahul Saravanabavan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Reveal animations when scrolling
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if(sectionTop < windowHeight - 100) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

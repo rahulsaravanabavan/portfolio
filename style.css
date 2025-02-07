@@ -1,0 +1,389 @@
+/* Basic Reset */
+@import url('https://fonts.googleapis.com/css2?family=Italianno&family=Lavishly+Yours&family=Stylish&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Liter&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* Navigation */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #ffffff;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: 1000;
+    display: flex;
+    justify-content: center; 
+}
+
+.nav-container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+}
+
+/* Sections */
+section {
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+}
+.hero {
+    display: flex;
+    width: 100%;
+}
+
+.hero-text {
+    flex: 1;
+    text-align: left;
+}
+.hero-text h1 {
+    font-size: 3rem;
+    margin: 0;
+    font-family: "Italianno", serif;
+    font-weight: 400;
+    font-size: 80px;
+    font-style: normal;
+    color: #01526f;
+}
+
+.hero-text .hide-on-scroll {
+    transition: opacity 0.5s ease;
+    color: #2596be;
+}
+.hero-text p {
+    font-size: 25px;
+    color: #555;
+    font-family: "Liter", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.hero button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.hero-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Hiding "Saravanabavan" on scroll */
+.hidden {
+    opacity: 0;
+    color: #2596be;
+}
+
+/* About section */
+#about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto; /* Adjust based on your layout */
+    background-color: #f4f4f4; /* Light background for contrast */
+    justify-content: space-between;
+}
+
+.about-section {
+    background: white;
+    padding: 30px;
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center;
+    width: 50%; /* Adjust width */
+    max-width: 600px; /* Prevents it from getting too wide */
+    color: rgb(0, 0, 0);
+    align-items: center;
+}
+
+.about-section p{
+    text-align: justify;
+    color: rgb(0, 0, 0);
+}
+
+.about-image {
+    flex:1;
+    display: flex;
+    justify-content: right;
+    height: 600px;
+}
+
+.about-image img {
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+#Education{
+    padding: 100px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+}
+/* Table Styling */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Header Styling */
+.styled-table thead {
+    background-color: #004080; /* Dark blue header */
+    color: white;
+    font-weight: bold;
+}
+
+/* Table Cell Styling */
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+}
+
+/* Alternating Row Colors */
+.styled-table tbody tr:nth-child(even) {
+    background-color: #f3f3f3; /* Light gray */
+}
+
+.styled-table tbody tr:nth-child(odd) {
+    background-color: #e6f7ff; /* Light blue */
+}
+
+/* Hover Effect */
+.styled-table tbody tr:hover {
+    background-color: #cce7ff; /* Slightly darker blue on hover */
+}
+
+/* Heading Style */
+.contact-form h2 {
+    text-align: center;
+    font-size: 24px;
+    color: #004080; /* Matching Dark Blue */
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+/* Projects */
+.project-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+    background-color: #f4f4f4;
+}
+
+.project-image {
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.project-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.project-content h2 {
+    margin-bottom: 15px;
+}
+
+.project-content p {
+    text-align: justify;
+    color: #000;
+    
+}
+
+/* Project Section 2 */
+.project-section2 {
+    background-color: #FFFFFF;
+}
+.project-section2 {
+    display: flex;
+    align-items: center; /* Aligns content vertically */
+    justify-content: space-between; /* Distributes space between image and content */
+}
+
+.project-image2 {
+    flex: 1; /* Makes image container take up equal space */
+    margin-right: 20px; 
+}
+
+.project-content2 {
+    flex: 2; /* Content takes up more space */
+}
+
+.project-image2 img {
+    width: 100%; /* Makes the image responsive */
+    height: 100%; /* Maintains aspect ratio */
+}
+.project-content2 p {
+    text-align: justify;
+    color: #000;
+    
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    width: 100%;
+}
+/* Button */
+button {
+    margin-top: 1rem;
+    padding: 10px 20px;
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    border-radius: 5%;
+}
+
+/* Carousel Styles */
+.carousel-container {
+    position: relative;
+    max-width: 1200px;
+    margin: 2rem auto;
+    overflow: hidden;
+}
+
+.carousel-slide {
+    display: none;
+    padding: 2rem;
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-slide.active {
+    display: block;
+    animation: fadeIn 0.5s;
+}
+
+/* Accordion Styles */
+
+.project-content {
+    display: inline-block;
+    justify-content: center; /* Horizontally center the content */
+    align-items: center; /* Vertically center the content */
+    height: 100%; /* Ensure the container has enough height */
+    text-align: center;
+    margin-right: 20px;
+}
+
+
+/* Carousel Controls */
+.carousel-container {
+    position: relative;
+    width: auto; 
+    overflow: hidden; /* Hides the overflowed content */
+}
+
+.carousel-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* Smooth transition for sliding effect */
+}
+
+.carousel-item {
+    min-width: 100%; /* Each item takes full container width */
+    box-sizing: border-box; /* Prevents padding from affecting width */
+    display: flex;
+    justify-content: center; /* Centers the image */
+    align-items: center; /* Vertically centers the image */
+    background-color: #f4f4f4; /* Optional: box background color */
+}
+
+.carousel-item img {
+    width: auto;
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px;
+}
+
+.carousel-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    z-index: 1000;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    
+    section {
+        padding: 3rem 1rem;
+    }
+}

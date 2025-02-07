@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahul Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="portfolio.html">Home</a>
+                <a href="#about">About</a>
+                <a href="projectGIS.html">GIS Projects</a>
+                <a href="projectUX.html">UX Projects</a>
+                <a href="#Education">Education</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-text">
+            <h1><span>Rahul</span> <span class="hide-on-scroll">Saravanabavan</span></h1>
+            <p><span>Where there is a problem, There is a possibility. </span class:"hero-possibility"></p>
+            <p> Try It! </p>
+            <a href="https://www.linkedin.com/in/rahulsaravanabavan" target="_blank">
+                <button>Get in Touch</button>
+            </a>
+            
+        </div>
+        <div class="hero-image">
+            <img src="./assets/RahulImage.jpg" alt="Your Photo">
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="about-section">
+            <h2>About Me</h2>
+            <h2> Hello all, let’s dive into GIS and UX!</h2>
+            <p>
+                GIS isn’t just a field of study for me it’s a way to make a difference. I’ve always been fascinated by the power of location data to reveal patterns, solve problems, and improve lives. Whether it’s mapping accessibility, planning smarter cities, or visualizing environmental change, I believe GIS has the ability to bring clarity to complex challenges and drive meaningful action.
+
+                One of my most rewarding projects was GeoConnect Prince Edward County (PEC), where I used spatial trend analysis and multi-criteria decision-making to help identify suitable housing sites. Seeing how data-driven insights could support urban planning and impact real communities deepened my passion for using GIS to create solutions that truly matter.
+
+                At Wipro Technologies, I worked with enterprise GIS applications and infrastructure mapping, gaining hands-on experience in large-scale geospatial solutions. It was here that I learned the importance of designing GIS tools that aren’t just functional, but also accessible and user-friendly ensuring that those who rely on spatial data can make informed decisions with ease.
+
+                More recently, I’ve been exploring UX in GIS through my volunteer role with BeSpatial Ontario as a Web Designer. By applying UX research and data-driven insights, I’m working to make GIS applications more intuitive, bridging the gap between technology and human experience. <i>Because at its core, GIS isn’t just about data it’s about people.
+
+                Every map tells a story, every dataset has a human impact, and that’s what drives my passion for this field. As I continue my journey, I’m excited to learn, collaborate, and contribute to projects that make spatial data more meaningful, accessible, and impactful</i>.
+
+                If you’re passionate about spatial analysis, UX in GIS, or using geospatial technology for real-world impact, I’d love to connect and exchange ideas!  </p>
+        </div>
+
+        <div class="about-image">
+            <img src="./assets/map.jpg" alt="simple map">
+        </div>
+    </section>
+
+    <section id="Education">
+        <div class="contact-form">
+            <h2>What worked well?</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Program</th>
+                        <th>Duration</th>
+                        <th>Institution</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>UX Design</td>
+                        <td>September 2024 - April 2025</td>
+                        <td>St. Lawrence College, Kingston, ON</td>
+                    </tr>
+                    <tr>
+                        <td>GIS Application Specialist</td>
+                        <td>September 2023 – June 2024</td>
+                        <td>Fleming College, Lindsay, ON</td>
+                    </tr>
+                    <tr>
+                        <td>Masters in Applied Geology</td>
+                        <td>June 2016 - May 2022</td>
+                        <td>Pondicherry University, India</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Rahul Saravanabavan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Reveal animations when scrolling
+        window.addEventListener('scroll', function() {
+            const sections = document.querySelectorAll('section');
+            sections.forEach(section => {
+                const sectionTop = section.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if(sectionTop < windowHeight - 100) {
+                    section.style.opacity = '1';
+                    section.style.transform = 'translateY(0)';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
