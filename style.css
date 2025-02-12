@@ -250,22 +250,23 @@ section {
 }
 
 .project-image2 {
-    flex: 1; /* Makes image container take up equal space */
-    margin-right: 20px; 
-}
-
-.project-content2 {
-    flex: 2; /* Content takes up more space */
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .project-image2 img {
-    width: 100%; /* Makes the image responsive */
-    height: 100%; /* Maintains aspect ratio */
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 .project-content2 p {
     text-align: justify;
     color: #000;
-    
+    text-align: center;
+    max-width: 600px;
 }
 
 /* Contact Form */
