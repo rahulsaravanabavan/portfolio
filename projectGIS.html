@@ -3,162 +3,280 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul Portfolio</title>
+    <meta name="description" content="Rahul Saravanabavan - GIS Application Specialist and UX Designer Portfolio">
+    <meta name="keywords" content="GIS, UX Design, Geospatial, Portfolio, Mapping, User Experience">
+    <meta name="author" content="Rahul Saravanabavan">
+    <title>Rahul Saravanabavan - GIS & UX Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
 </head>
 <body>
-    <nav>
+    <nav role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-links">
-                <a href="index.html">Home</a>
-                <a href="projectGIS.html">GIS Projects</a>
+                <a href="index.html" >Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="quinte.html">Quinte Conservation</a>
+                <a href="projectGIS.html"  aria-current="page">GIS Projects</a>
                 <a href="projectUX.html">UX Projects</a>
             </div>
         </div>
     </nav>
-    <section class="project-section">
+
+    <!-- GeoConnect PEC Project -->
+    <section class="project-section" aria-label="GeoConnect Prince Edward County project">
         <div class="project-image">
-            <img src="./assets/Hub.gif" alt="Hub">
+            <img src="./assets/Hub.gif" alt="GeoConnect PEC project demonstration showing interactive mapping interface">
         </div>
         <div class="project-content">
             <h2>GeoConnect Prince Edward County</h2>
-            <p>Through this project, I gained hands-on experience in using GIS to address real-world challenges, 
-                particularly in rural connectivity and infrastructure planning. Working with large datasets taught 
-                me the importance of data cleaning and optimization for smoother processing in ArcGIS Pro. I also 
-                learned how to analyze broadband accessibility and visualize service gaps, deepening my understanding 
-                of digital equity in rural areas. When I encountered missing census tract data for PEC, I had to think 
-                critically and find alternative sources like the Esri Living Atlas, which strengthened my problem-solving 
-                skills. Mapping housing and population trends over time helped me see how spatial analysis can support 
-                decision-making for community development. Additionally, working with road networks and broadband 
-                expansion data reinforced how GIS can bridge the gap between technology and public services. Digitizing 
-                bus stops and creating transit routes in Picton gave me practical insights into how GIS is used in 
-                transportation planning. Overall, this project not only refined my technical skills but also gave me a deeper 
-                appreciation for how geospatial data can drive meaningful change in communities.
+            <p>
+                Through this project, I gained hands-on experience in using GIS to address real-world challenges, particularly in rural connectivity and infrastructure planning. Working with large datasets taught me the importance of data cleaning and optimization for smoother processing in ArcGIS Pro. I also learned how to analyze broadband accessibility and visualize service gaps, deepening my understanding of digital equity in rural areas.
             </p>
-            <a href="https://rahulsaravanabavan.github.io/geoconnectpec/index.html" target="_blank">
-                <button>Learn More</button>
+            <p>
+                When I encountered missing census tract data for PEC, I had to think critically and find alternative sources like the Esri Living Atlas, which strengthened my problem-solving skills. Mapping housing and population trends over time helped me see how spatial analysis can support decision-making for community development. Additionally, working with road networks and broadband expansion data reinforced how GIS can bridge the gap between technology and public services.
+            </p>
+            <p>
+                Digitizing bus stops and creating transit routes in Picton gave me practical insights into how GIS is used in transportation planning. Overall, this project not only refined my technical skills but also gave me a deeper appreciation for how geospatial data can drive meaningful change in communities.
+            </p>
+            <a href="https://rahulsaravanabavan.github.io/geoconnectpec/index.html" target="_blank" rel="noopener noreferrer">
+                <button class="project-button" aria-label="Learn more about GeoConnect PEC project">Learn More</button>
             </a>
         </div>
     </section>
 
-    <section class="project-section2">
+    <!-- Lindsay Transit Project -->
+    <section class="project-section2" aria-label="Lindsay Transit Network project">
         <div class="project-image2">
-            <video width="auto" height="auto" autoplay muted>
+            <video width="auto" height="auto" autoplay muted loop aria-label="Lindsay Transit project demonstration video">
                 <source src="./assets/Lindsaytransit.mp4" type="video/mp4">
-              </video>
+                Your browser does not support the video tag.
+            </video>
         </div>
         <div class="project-content2">
-            <h2>Transit network for Lindsay</h2>
-            <p>In March 2024, we as a group of 4 developed a transit system application using 
-                ArcGIS Experience Builder, integrating GTFS (General Transit Feed Specification) 
-                data for real-time transit information. This involved creating table views for transit stops, 
-                adding routing capabilities, and implementing GTFS feeds to display bus schedules and routes. 
-                While I successfully integrated core features like directions widgets and schedule displays, 
-                I faced challenges with CSV file integration, GTFS data synchronization, and trigger functionality. 
-                This project taught me the importance of standardized transit data formats and spatial data attributes, 
-                and it highlighted the complexities of web GIS application development. I gained hands-on 
-                experience in web GIS development, GTFS data management, data relationships, and transit 
-                system visualization, all while learning how to address technical challenges through documentation and troubleshooting.
+            <h2>Transit Network for Lindsay</h2>
+            <p>
+                In March 2024, we as a group of 4 developed a transit system application using ArcGIS Experience Builder, integrating GTFS (General Transit Feed Specification) data for real-time transit information. This involved creating table views for transit stops, adding routing capabilities, and implementing GTFS feeds to display bus schedules and routes.
             </p>
-            <!-- Helen Plesko did this website and you can visit this website for more details -->
-            <a href="https://helenplesko.github.io/web2lindsaytransit/" target="_blank">
-                <button>Learn More</button>
+            <p>
+                While I successfully integrated core features like directions widgets and schedule displays, I faced challenges with CSV file integration, GTFS data synchronization, and trigger functionality. This project taught me the importance of standardized transit data formats and spatial data attributes, and it highlighted the complexities of web GIS application development.
+            </p>
+            <p>
+                I gained hands-on experience in web GIS development, GTFS data management, data relationships, and transit system visualization, all while learning how to address technical challenges through documentation and troubleshooting.
+            </p>
+            <p class="project-credit">
+                <em>Project developed in collaboration with Helen Plesko.</em>
+            </p>
+            <a href="https://helenplesko.github.io/web2lindsaytransit/" target="_blank" rel="noopener noreferrer">
+                <button class="project-button" aria-label="Learn more about Lindsay Transit project">Learn More</button>
             </a>
         </div>
     </section>
 
-    <section class="project-section3">
-        <div class="project-content">
-            <h2>Simple Maps</h2>
-            <p> These are some of the maps that I did during my first semester in Fleming college.</p>
+    <!-- Simple Maps Carousel -->
+    <section class="project-section3" aria-label="Collection of simple maps from first semester">
+        <div class="project-content3">
+            <h2>Simple Maps Collection</h2>
+            <p>These are some of the maps that I created during my first semester at Fleming College. Each map demonstrates different GIS techniques and cartographic principles.</p>
         </div>
-        <div class="carousel-container">
+        
+        <div class="carousel-container" role="region" aria-label="Maps carousel" aria-live="polite">
             <div class="carousel-slide">
-                <div class="carousel-item"><img src="./assets/project3.jpg" alt="Project 3"></div>
-                <div class="carousel-item"><img src="./assets/project4.jpg" alt="Project 4"></div>
-                <div class="carousel-item"><img src="./assets/project5.jpg" alt="Project 5"></div>
-                <div class="carousel-item"><img src="./assets/project6.jpg" alt="Project 6"></div>
-                <div class="carousel-item"><img src="./assets/project7.jpg" alt="Project 7"></div>
+                <div class="carousel-item">
+                    <img src="./assets/project3.jpg" alt="GIS Map Project 3 - Cartographic design example">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/project4.jpg" alt="GIS Map Project 4 - Spatial analysis visualization">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/project5.jpg" alt="GIS Map Project 5 - Thematic mapping example">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/project6.jpg" alt="GIS Map Project 6 - Geographic data representation">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/project7.jpg" alt="GIS Map Project 7 - Advanced cartographic techniques">
+                </div>
             </div>
-            <button class="carousel-button prev">&#10094;</button>
-            <button class="carousel-button next">&#10095;</button>
+            <button class="carousel-button prev" aria-label="View previous map">&#10094;</button>
+            <button class="carousel-button next" aria-label="View next map">&#10095;</button>
+            
+            <!-- Carousel indicators -->
+            <div class="carousel-indicators">
+                <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
+                <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
+                <button class="indicator" data-slide="2" aria-label="Go to slide 3"></button>
+                <button class="indicator" data-slide="3" aria-label="Go to slide 4"></button>
+                <button class="indicator" data-slide="4" aria-label="Go to slide 5"></button>
+            </div>
         </div>
     </section>
-    
 
-    <footer>
+    <!-- Footer -->
+    <footer role="contentinfo">
         <p>&copy; 2025 Rahul Saravanabavan. All rights reserved.</p>
         <div class="social-links">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="https://github.com/rahulsaravanabavan" target="_blank" rel="noopener noreferrer" aria-label="Visit Rahul's GitHub profile">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rahulsaravanabavan" target="_blank" rel="noopener noreferrer" aria-label="Visit Rahul's LinkedIn profile">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
         </div>
     </footer>
 
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    
+    <!-- Main JavaScript -->
     <script>
-        // Smooth scrolling for navigation links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeGISProjects();
         });
 
-        // Reveal animations when scrolling  <p>Volunteer role focusing on UX design for GIS applications. Applied user research and data-driven insights to improve the accessibility and usability of spatial data tools.</p>
-        window.addEventListener('scroll', function() {
-            const sections = document.querySelectorAll('section');
-            sections.forEach(section => {
-                const sectionTop = section.getBoundingClientRect().top;
-                const windowHeight = window.innerHeight;
-                
-                if(sectionTop < windowHeight - 100) {
-                    section.style.opacity = '1';
-                    section.style.transform = 'translateY(0)';
-                }
+        function initializeGISProjects() {
+            setupSmoothScrolling();
+            setupScrollAnimations();
+            setupCarousel();
+        }
+
+        // Smooth scrolling for navigation links
+        function setupSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
             });
-        });
-        let currentIndex = 0;
-        const descriptions = [
-            "Description of the first project, highlighting key features and contributions.",
-            "Description of the second project, detailing its impact and challenges.",
-            "Overview of the third project, emphasizing innovation and problem-solving aspects."
-        ];
-        
-        document.addEventListener('DOMContentLoaded', function() {
+        }
+
+        // Reveal animations when scrolling
+        function setupScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+        }
+
+        // Enhanced Carousel functionality
+        function setupCarousel() {
             const carouselContainer = document.querySelector('.carousel-container');
             const carouselSlide = document.querySelector('.carousel-slide');
             const carouselItems = document.querySelectorAll('.carousel-item');
             const prevButton = document.querySelector('.prev');
             const nextButton = document.querySelector('.next');
+            const indicators = document.querySelectorAll('.indicator');
             
             let currentIndex = 0;
-        
-            function updateSlide() {
-                const containerWidth = carouselContainer.offsetWidth;
-                carouselSlide.style.transform = `translateX(-${currentIndex * containerWidth}px)`;
+            let autoPlayInterval;
+
+            if (!carouselContainer || !carouselSlide || carouselItems.length === 0) {
+                console.warn('Carousel elements not found');
+                return;
             }
-        
+
+            function updateSlide(index = currentIndex) {
+                const containerWidth = carouselContainer.offsetWidth;
+                carouselSlide.style.transform = `translateX(-${index * containerWidth}px)`;
+                
+                // Update indicators
+                indicators.forEach((indicator, i) => {
+                    indicator.classList.toggle('active', i === index);
+                });
+                
+                currentIndex = index;
+            }
+
             function nextSlide() {
                 currentIndex = (currentIndex + 1) % carouselItems.length;
                 updateSlide();
             }
-        
+
             function prevSlide() {
                 currentIndex = (currentIndex - 1 + carouselItems.length) % carouselItems.length;
                 updateSlide();
             }
-        
-            nextButton.addEventListener('click', nextSlide);
-            prevButton.addEventListener('click', prevSlide);
-        
-            // Handle window resize
-            window.addEventListener('resize', updateSlide);
+
+            function goToSlide(index) {
+                currentIndex = index;
+                updateSlide();
+                resetAutoPlay();
+            }
+
+            function startAutoPlay() {
+                autoPlayInterval = setInterval(nextSlide, 4000);
+            }
+
+            function stopAutoPlay() {
+                clearInterval(autoPlayInterval);
+            }
+
+            function resetAutoPlay() {
+                stopAutoPlay();
+                startAutoPlay();
+            }
+
+            // Event listeners
+            if (nextButton) nextButton.addEventListener('click', () => {
+                nextSlide();
+                resetAutoPlay();
+            });
             
-            // Initialize slide position
-            updateSlide();
-            setInterval(nextSlide, 3000);
-        });
+            if (prevButton) prevButton.addEventListener('click', () => {
+                prevSlide();
+                resetAutoPlay();
+            });
+
+            // Indicator click events
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => goToSlide(index));
+            });
+
+            // Pause auto-play on hover
+            carouselContainer.addEventListener('mouseenter', stopAutoPlay);
+            carouselContainer.addEventListener('mouseleave', startAutoPlay);
+
+            // Handle window resize
+            window.addEventListener('resize', () => updateSlide());
+            
+            // Keyboard navigation
+            carouselContainer.addEventListener('keydown', (e) => {
+                if (e.key === 'ArrowLeft') {
+                    prevSlide();
+                    resetAutoPlay();
+                } else if (e.key === 'ArrowRight') {
+                    nextSlide();
+                    resetAutoPlay();
+                }
+            });
+
+            // Initialize
+            updateSlide(0);
+            startAutoPlay();
+            
+            // Make carousel focusable for keyboard navigation
+            carouselContainer.setAttribute('tabindex', '0');
+        }
     </script>
 </body>
 </html>
