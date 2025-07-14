@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Rahul Saravanabavan - GIS Application Specialist and UX Designer Portfolio">
+    <meta name="keywords" content="GIS, UX Design, Geospatial, Portfolio, Mapping, User Experience">
+    <meta name="author" content="Rahul Saravanabavan">
+    <title>Rahul Saravanabavan - GIS & UX Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.ico">
+</head>
+<body>
+    <nav role="navigation" aria-label="Main navigation">
+        <div class="nav-container">
+            <div class="nav-links">
+                <a href="index.html" >Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="quinte.html" aria-current="page">Quinte Conservation</a>
+                <a href="projectGIS.html">GIS Projects</a>
+                <a href="projectUX.html">UX Projects</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="quinte-header" aria-label="Quinte Conservation overview">
+        <div class="header-content">
+            <h1>A Glance through Quinte Conservation</h1>
+            <p class="header-subtitle">GIS Assistant Role - Environmental Planning & Data Management</p>
+            <div class="role-overview">
+                <p>
+                    During my time as a GIS Assistant at Quinte Conservation, I focused on developing innovative solutions 
+                    to support environmental planning and regulatory processes. My work involved historical data digitization, 
+                    wetland assessment tools, and automated workflows that significantly improved departmental efficiency 
+                    and decision-making capabilities.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Historical Air Photo Digitization Project -->
+    <section class="project-section" aria-label="Historical Air Photo Digitization project">
+        <div class="project-image">
+            <img src="./assets/Airphoto1.png" alt="Historical Air Photo Digitization arcGIS pro">
+        </div>
+        <div class="project-image">
+            <img src="./assets/Airphoto2.gif" alt="Historical Air Photo Digitization project showing georeferenced aerial photographs and mapping interface">
+        </div>
+        <div class="project-content">
+        <div class="project-content">
+            <h2>Historical Air Photo Digitization</h2>
+        <div class="project-overview">
+                <h3>Project Overview</h3>
+                <p>
+                    At Quinte Conservation, I led the digitization of historical aerial photographs to support long-term 
+                    environmental planning and web mapping. This involved georeferencing over 2,300+ scanned images, 
+                    calculating photo scales, automating spatial feature generation, and linking aerial imagery to map 
+                    tiles through scripting. The outcome is a spatially accurate, searchable, and web-accessible archive 
+                    of historical flight lines and imagery.
+                </p>
+            </div>
+
+            <div class="project-process">
+                <h3>Technical Process</h3>
+                <div class="process-steps">
+                    <div class="step-item">
+                        <h4>Manual Attribute Updates</h4>
+                        <p>Automated repetitive field updates (e.g., PhotoName) using Python scripts to match image files with spatial features, significantly saving time.</p>
+                    </div>
+                    <div class="step-item">
+                        <h4>Point Generation Along Lines</h4>
+                        <p>Streamlined creation of evenly spaced photo points using ArcPy's GeneratePointsAlongLines and MakeFeatureLayer, replacing manual digitizing.</p>
+                    </div>
+                    <div class="step-item">
+                        <h4>Image Format for Web Display</h4>
+                        <p>Converted TIFF images to JPEG using GDAL in Python to ensure compatibility with browser-based viewers and internal web mapping platforms.</p>
+                    </div>
+                    <div class="step-item">
+                        <h4>Duplicate Flight Line Names</h4>
+                        <p>Introduced subtypes based on year to differentiate identically named flight lines across multiple historical datasets, improving database integrity.</p>
+                    </div>
+                    <div class="step-item">
+                        <h4>Interactive Photo Access</h4>
+                        <p>Developed dynamic HTML hyperlink generation scripts to display aerial photo previews within interactive tile-based web maps.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-results">
+                <h3>Results & Impact</h3>
+                <p>
+                    This digitization project directly supported the Planning and Regulation Department by improving access 
+                    to historical aerial imagery critical for permit application reviews and environmental assessments. By 
+                    automating the georeferencing and indexing process, the turnaround time for retrieving historical context 
+                    on a site was dramatically reduced.
+                </p>
+                <p>
+                    Staff can now interactively explore flight lines, view linked images, and reference accurate historical 
+                    land use with confidence. The improved spatial accuracy and structured database also enhanced consistency 
+                    in decision-making, especially for reviewing applications in sensitive areas like wetlands or flood zones, 
+                    ultimately contributing to more efficient, transparent, and well-informed permitting processes.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Wetland Assessment Tool Project -->
+    <section class="project-section2" aria-label="Wetland Assessment Tool project">
+        <div class="project-image2">
+            <img src="./assets/Wetland.gif" alt="Wetland Assessment Tool showing ArcGIS Experience Builder interface with wetland polygons and interactive mapping features">
+        </div>
+        <div class="project-content2">
+            <h2>Wetland Assessment Tool – Planning & Regulations Support</h2>
+            <div class="project-overview">
+                <h3>Project Overview</h3>
+                <p>
+                    To support the Planning and Regulation Department in reviewing flagged wetland polygons for permit 
+                    application assessments, I developed a custom web application using ArcGIS Experience Builder. This 
+                    tool allows staff to interactively visualize, evaluate, and update wetland data in a structured and 
+                    user-friendly environment.
+                </p>
+            </div>
+
+            <div class="project-features">
+                <h3>Key Features & Implementation</h3>
+                <div class="features-grid">
+                    <div class="feature-item">
+                        <h4>Main Map & Inset Map Views</h4>
+                        <p>Displayed wetland polygons overlaid with contours, with an inset map showing only intersecting contour lines for precise visual analysis.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Smart Attribute Table Navigation</h4>
+                        <p>Selecting a record in the table automatically zooms the map to the associated wetland feature, streamlining visual review.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Review Workflow & Edit Tab</h4>
+                        <p>Users can classify each wetland polygon using the "Review Status" field—choosing whether to retain or delete based on visual and contextual assessment.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Smart Forms via ArcGIS Online</h4>
+                        <p>Integrated ArcGIS Online Smart Forms with domain-driven fields to ensure controlled and consistent data entry to maintain data integrity.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Automated Attribute Rules</h4>
+                        <p>Developed an Arcade expression in smart form to auto-update the "Date Reviewed" field each time a polygon is edited, ensuring accurate recordkeeping.</p>
+                    </div>
+                    <div class="feature-item">
+                        <h4>Public Data Collection</h4>
+                        <p>Created editable layers for public engagement or field validation where permitted, using controlled schema and secure submission paths.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-results">
+                <h3>Results & Workflow Improvement</h3>
+                <p>
+                    The Experience Builder application significantly improved the Planning and Regulation Department's wetland 
+                    review workflow by introducing a centralized, interactive environment for QA/QC, attribute editing, and 
+                    spatial analysis. A custom QA/QC model was designed in ArcGIS Pro to pre-flag wetland polygons based on 
+                    size and proximity to existing wetlands.
+                </p>
+                <p>
+                    Using the QA/QC model as a first pass ensured reviewers focused only on potential data anomalies, 
+                    drastically reducing visual clutter and review time. Edits to the "Review Status" field were controlled 
+                    via domain values in smart forms, while an Arcade expression automatically stamped the "Date Reviewed" 
+                    date, enabling a reliable audit trail for future verification.
+                </p>
+                <div class="impact-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">60%+</span>
+                        <span class="stat-label">Reduction in Review Time</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">2,300+</span>
+                        <span class="stat-label">Historical Images Digitized</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">100%</span>
+                        <span class="stat-label">Data Integrity Improvement</span>
+                    </div>
+                </div>
+                <p>
+                    By combining automated checks in ArcGIS Pro with an intuitive web-based editing tool, the solution not 
+                    only reduced review time but also standardized data validation and eliminated inconsistencies across 
+                    the wetland inventory. This process now supports faster, more transparent permit reviews, with high data 
+                    integrity for both regulatory compliance and conservation planning.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Technologies Used -->
+    <section class="project-section3" aria-label="Skills and technologies used">
+        <div class="project-content3">
+            <h2>Technologies & Skills Applied</h2>
+            <div class="tech-grid">
+                <div class="tech-category">
+                    <h3>GIS Software</h3>
+                    <ul>
+                        <li>ArcGIS Pro</li>
+                        <li>ArcGIS Experience Builder</li>
+                        <li>ArcGIS Online</li>
+                        <li>ArcPy (Python)</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Programming & Scripting</h3>
+                    <ul>
+                        <li>Python (GDAL, ArcPy)</li>
+                        <li>Arcade Expressions</li>
+                        <li>HTML/JavaScript</li>
+                        <li>Automated Workflows</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Data Management</h3>
+                    <ul>
+                        <li>Historical Data Digitization</li>
+                        <li>Georeferencing</li>
+                        <li>Database Design</li>
+                        <li>QA/QC Processes</li>
+                    </ul>
+                </div>
+                <div class="tech-category">
+                    <h3>Web Development</h3>
+                    <ul>
+                        <li>Web Mapping Applications</li>
+                        <li>Interactive Dashboards</li>
+                        <li>Smart Forms</li>
+                        <li>Public Data Collection</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer role="contentinfo">
+        <p>&copy; 2025 Rahul Saravanabavan. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://github.com/rahulsaravanabavan" target="_blank" rel="noopener noreferrer" aria-label="Visit Rahul's GitHub profile">
+                <i class="fab fa-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/rahulsaravanabavan" target="_blank" rel="noopener noreferrer" aria-label="Visit Rahul's LinkedIn profile">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+            </a>
+        </div>
+    </footer>
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
+    
+    <!-- Main JavaScript -->
+    <script>
+        // DOM Content Loaded
+        document.addEventListener('DOMContentLoaded', function() {
+            initializeQuinteProjects();
+        });
+
+        function initializeQuinteProjects() {
+            setupSmoothScrolling();
+            setupScrollAnimations();
+            setupStatsAnimation();
+        }
+
+        // Smooth scrolling for navigation links
+        function setupSmoothScrolling() {
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const target = document.querySelector(this.getAttribute('href'));
+                    if (target) {
+                        target.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+        }
+
+        // Reveal animations when scrolling
+        function setupScrollAnimations() {
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -100px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate-in');
+                    }
+                });
+            }, observerOptions);
+
+            // Observe sections
+            document.querySelectorAll('section').forEach(section => {
+                observer.observe(section);
+            });
+
+            // Observe individual elements for staggered animations
+            document.querySelectorAll('.step-item, .feature-item, .tech-category').forEach((item, index) => {
+                const staggeredObserver = new IntersectionObserver((entries) => {
+                    entries.forEach(entry => {
+                        if (entry.isIntersecting) {
+                            setTimeout(() => {
+                                entry.target.classList.add('animate-in');
+                            }, index * 100);
+                        }
+                    });
+                }, observerOptions);
+                
+                staggeredObserver.observe(item);
+            });
+        }
+
+        // Animate statistics numbers
+        function setupStatsAnimation() {
+            const statsObserver = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        animateNumbers();
+                    }
+                });
+            }, { threshold: 0.5 });
+
+            const statsSection = document.querySelector('.impact-stats');
+            if (statsSection) {
+                statsObserver.observe(statsSection);
+            }
+        }
+
+        function animateNumbers() {
+            const statNumbers = document.querySelectorAll('.stat-number');
+            
+            statNumbers.forEach(stat => {
+                const text = stat.textContent;
+                const isPercentage = text.includes('%');
+                const isPlus = text.includes('+');
+                const number = parseInt(text.replace(/[^0-9]/g, ''));
+                
+                let current = 0;
+                const increment = number / 50; // Animate over 50 steps
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= number) {
+                        current = number;
+                        clearInterval(timer);
+                    }
+                    
+                    let displayText = Math.floor(current).toString();
+                    if (isPercentage) displayText += '%';
+                    if (isPlus && current >= number) displayText += '+';
+                    
+                    stat.textContent = displayText;
+                }, 30);
+            });
+        }
+    </script>
+</body>
+</html>
