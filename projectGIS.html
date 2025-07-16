@@ -160,7 +160,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
     
     <!-- Main JavaScript -->
-    <script>
+   <script>
+        // Function to open story map in new window
+        function openStoryMap() {
+            window.open('https://storymaps.arcgis.com/stories/8d67ac492dba477e9471bae40a25bfc4', '_blank', 'noopener,noreferrer');
+        }
+
         // DOM Content Loaded
         document.addEventListener('DOMContentLoaded', function() {
             initializeGISProjects();
