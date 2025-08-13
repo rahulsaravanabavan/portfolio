@@ -14,11 +14,11 @@
     <nav role="navigation" aria-label="Main navigation">
         <div class="nav-container">
             <div class="nav-links">
-                <a href="index.html" >Home</a>
+                <a href="index.html">Home</a>
                 <a href="#about">About</a>
                 <a href="#education">Education</a>
                 <a href="quinte.html">Quinte Conservation</a>
-                <a href="projectGIS.html"  aria-current="page">GIS Projects</a>
+                <a href="projectGIS.html" aria-current="page">GIS Projects</a>
                 <a href="projectUX.html">UX Projects</a>
             </div>
         </div>
@@ -73,7 +73,116 @@
             </a>
         </div>
     </section>
-    <!-- Story Map Section -->
+
+    <!-- Asset Management Project -->
+    <section class="project-section" aria-label="Asset Management Risk Analysis project">
+        <div class="project-image">
+            <img src="./assets/asset-management.png" alt="Asset Management Risk Analysis project showing water infrastructure risk assessment maps and analysis">
+        </div>
+        <div class="project-content">
+            <h2>Water Infrastructure Risk Assessment</h2>
+            <p>
+                I developed a comprehensive vector-based risk analysis system to facilitate infrastructure asset management for the City of Peterborough's water distribution network. This project implemented the ISO Standard for Risk and Resilience Management, analyzing risk as a function of likelihood, vulnerability, consequence, and resilience factors.
+            </p>
+            <p>
+                Using advanced GIS modeling in ArcGIS Pro, I created automated workflows to assess multiple threat scenarios including natural disasters (flooding/freeze events), third-party damage from infrastructure maintenance, and pipe breaks due to material degradation. The analysis incorporated spatial proximity calculations, attribute-based queries, and multi-criteria evaluation to generate comprehensive risk indices for each water main segment.
+            </p>
+            <p>
+                The project involved complex spatial analysis including buffer operations, select by location queries, and field calculations to evaluate vulnerability based on proximity to water features, road networks, and land use classifications. I integrated socioeconomic impact assessments, environmental consequence modeling, and infrastructure criticality analysis to provide actionable insights for municipal asset management decision-making.
+            </p>
+            <p>
+                This work demonstrates my expertise in spatial modeling, risk assessment frameworks, and municipal infrastructure planning, directly supporting evidence-based maintenance scheduling and capital investment prioritization for critical water system assets.
+            </p>
+        </div>
+    </section>
+
+    <!-- Network Analysis Project -->
+    <section class="project-section2" aria-label="Network Analysis Ambulance Service project">
+        <div class="project-image2">
+            <img src="./assets/network.jpg" alt="Network Analysis project showing ambulance service coverage areas and routing optimization maps">
+        </div>
+        <div class="project-content2">
+            <h2>Network Analysis – Optimizing Ambulance Service Coverage & Routing</h2>
+            <p>
+                Using ArcGIS Pro's Network Analyst, I built a complete municipal road network model to support emergency medical services. The workflow included data preparation and topology correction where I imported Navteq street data, ambulance station locations, and incident points, then implemented topology rules to ensure full connectivity with no gaps, dangles, overlaps, or pseudonodes in the street network, followed by validation and correction of errors to maintain routing accuracy.
+            </p>
+            <p>
+                I performed comprehensive attribute enrichment by adding and calculating key travel attributes, including road speed limits, segment distances in kilometers, and estimated drive times using the formula `([Distance] * 60) / [SpeedLimit]`. This was followed by network dataset creation where I built a topologically correct network dataset with custom travel modes and impedance set to drive time, allowing for precise time-based routing calculations.
+            </p>
+            <p>
+                The analysis included Service Area Analysis where I generated multi-minute (1–6 minute) catchment zones around ambulance facilities to visualize coverage areas, identify underserved locations, and detect road network gaps that could impede emergency access. I also conducted Fastest Route and Closest Facility Analysis, running the Closest Facility solver to determine the shortest drive-time paths from ambulance stations to public service locations such as schools, pinpointing the optimal facility to respond to each incident.
+            </p>
+            <p>
+                Quality assurance was achieved through creating a map book series for grid-based visual inspection, identifying network gaps, rebuilding the network after corrections, and comparing results against Esri's default network dataset for validation. This process delivered an accurate, high-performance GIS network model capable of supporting municipal decision-making for ambulance deployment, service coverage optimization, and emergency route planning.
+            </p>
+        </div>
+    </section>
+
+    <!-- Least Cost Pathway Analysis Project -->
+    <section class="project-section" aria-label="Least Cost Pathway Analysis project">
+        <div class="project-image">
+            <img src="./assets/route.jpg" alt="Yellowstone National Park least cost pathway analysis overview showing trail route and environmental factors">
+        </div>
+        
+        <div class="project-content">
+            <h2>Least Cost Pathway Analysis – Safe Human Trail Planning in Yellowstone</h2>
+            <p>
+                Using ArcGIS Pro's Spatial Analyst tools, I developed a least-cost trail route between two user-defined points in Yellowstone National Park by integrating multiple environmental and anthropogenic factors. This comprehensive analysis required sophisticated data preparation where I imported and organized raster and vector datasets for landcover, DEM, wolf sightings, existing trails and campsites, and road networks.
+            </p>
+            
+            <div class="criteria-gallery">
+                <h3>Multi-Criteria Cost Analysis</h3>
+                <div class="criteria-grid">
+                    <div class="criteria-item">
+                        <img src="./assets/Landcover.png" alt="Landcover classification showing habitat types reclassified for human travel suitability">
+                        <div class="criteria-overlay">
+                            <h4>Landcover Analysis</h4>
+                            <p>Reclassified habitat types into cost values based on suitability for safe human travel</p>
+                        </div>
+                    </div>
+                    <div class="criteria-item">
+                        <img src="./assets/SlopeCost.png" alt="Slope Cost">
+                        <div class="criteria-overlay">
+                            <h4>Slope Analysis</h4>
+                            <p>Derived slope in degrees from DEM, classified into difficulty ranges with assigned cost values</p>
+                        </div>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="criteria-overlay">
+                            <h4>Wolf Density Mapping</h4>
+                            <p>Created 1000 m² grid, interpolated sighting data with Kernel Density, reclassified into risk categories</p>
+                        </div>
+                    </div>
+                    <div class="criteria-item">
+                        <div class="criteria-overlay">
+                            <h4>Distance Analysis</h4>
+                            <p>Generated Euclidean distance surfaces to campsites, trails, and roads with cost reclassification</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <p>
+                The criteria cost modeling involved multiple sophisticated analyses. For landcover, I reclassified habitat types into cost values based on suitability for safe human travel. Slope analysis included deriving slope in degrees from DEM, classifying into difficulty ranges, and assigning cost values. Wolf density analysis required creating a 1000 m² grid, aggregating wolf sighting data, interpolating with Kernel Density, and reclassifying into risk-based cost categories. Distance analyses included selecting and merging relevant features for campsites and trails, creating Euclidean distance surfaces, and reclassifying distances into cost values, as well as generating Euclidean distances from roads and assigning travel risk costs.
+            </p>
+            
+            <p>
+                Weight assignment utilized the Pairwise Comparison method to assign criteria weights: Slope 30%, Landcover 20%, Wolf Density 20%, Distance to Campsites/Trails 20%, and Road Distance 10%. Surface combination applied the Weighted Sum tool to merge reclassified cost rasters into a Combined Surface Cost raster. The least cost path calculation involved digitizing origin and destination points, using Cost Distance and Cost Direction tools to generate cumulative cost surfaces, and applying the Cost Path as Polyline tool to extract the optimal trail route.
+            </p>
+            
+            <div class="result-showcase">
+                <div class="result-caption">
+                    <h4>Optimal Trail Route</h4>
+                    <p>Data-driven trail alignment minimizing environmental disturbance and human risk exposure</p>
+                </div>
+            </div>
+            
+            <p>
+                Cartographic output and presentation included creating semi-transparent thematic layers over hillshade for visual clarity, publishing starting point, ending point, trail, and supporting layers as AGOL web layers, and building an interactive Esri StoryMap combining maps, workflow diagrams, and explanatory text to communicate methodology and results. The result was a data-driven, multi-criteria trail alignment that minimizes environmental disturbance, avoids high-risk wolf zones, and reduces human exposure to unsafe terrain, while maintaining accessibility.
+            </p>
+        </div>
+    </section>
+
     <!-- Story Map Section -->
     <section class="project-section" aria-label="Professional Story Map project">
         <div class="project-image">
@@ -97,7 +206,6 @@
             </a>
         </div>
     </section>
-
 
     <!-- Simple Maps Carousel -->
     <section class="project-section3" aria-label="Collection of simple maps from first semester">
@@ -127,7 +235,6 @@
             <button class="carousel-button prev" aria-label="View previous map">&#10094;</button>
             <button class="carousel-button next" aria-label="View next map">&#10095;</button>
             
-            <!-- Carousel indicators -->
             <div class="carousel-indicators">
                 <button class="indicator active" data-slide="0" aria-label="Go to slide 1"></button>
                 <button class="indicator" data-slide="1" aria-label="Go to slide 2"></button>
@@ -151,12 +258,9 @@
         </div>
     </footer>
 
-    <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" crossorigin="anonymous">
     
-    <!-- Main JavaScript -->
-  <script>
-        // DOM Content Loaded
+    <script>
         document.addEventListener('DOMContentLoaded', function() {
             initializeGISProjects();
             handleStoryMapLoading();
@@ -168,7 +272,6 @@
             setupCarousel();
         }
 
-        // Handle story map loading
         function handleStoryMapLoading() {
             const storyMapIframe = document.querySelector('.story-map-iframe');
             const loadingText = document.querySelector('.story-map-loading');
@@ -180,7 +283,6 @@
             }
         }
 
-        // Smooth scrolling for navigation links
         function setupSmoothScrolling() {
             document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 anchor.addEventListener('click', function (e) {
@@ -196,7 +298,6 @@
             });
         }
 
-        // Reveal animations when scrolling
         function setupScrollAnimations() {
             const observerOptions = {
                 threshold: 0.1,
@@ -216,7 +317,6 @@
             });
         }
 
-        // Enhanced Carousel functionality
         function setupCarousel() {
             const carouselContainer = document.querySelector('.carousel-container');
             const carouselSlide = document.querySelector('.carousel-slide');
@@ -237,7 +337,6 @@
                 const containerWidth = carouselContainer.offsetWidth;
                 carouselSlide.style.transform = `translateX(-${index * containerWidth}px)`;
                 
-                // Update indicators
                 indicators.forEach((indicator, i) => {
                     indicator.classList.toggle('active', i === index);
                 });
@@ -274,7 +373,6 @@
                 startAutoPlay();
             }
 
-            // Event listeners
             if (nextButton) nextButton.addEventListener('click', () => {
                 nextSlide();
                 resetAutoPlay();
@@ -285,19 +383,15 @@
                 resetAutoPlay();
             });
 
-            // Indicator click events
             indicators.forEach((indicator, index) => {
                 indicator.addEventListener('click', () => goToSlide(index));
             });
 
-            // Pause auto-play on hover
             carouselContainer.addEventListener('mouseenter', stopAutoPlay);
             carouselContainer.addEventListener('mouseleave', startAutoPlay);
 
-            // Handle window resize
             window.addEventListener('resize', () => updateSlide());
             
-            // Keyboard navigation
             carouselContainer.addEventListener('keydown', (e) => {
                 if (e.key === 'ArrowLeft') {
                     prevSlide();
@@ -308,11 +402,9 @@
                 }
             });
 
-            // Initialize
             updateSlide(0);
             startAutoPlay();
             
-            // Make carousel focusable for keyboard navigation
             carouselContainer.setAttribute('tabindex', '0');
         }
     </script>
