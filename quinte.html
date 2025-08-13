@@ -149,6 +149,104 @@
                     </div>
                 </div>
             </div>
+            <!-- Database Management & Data Cleaning Project -->
+            <section class="project-section" aria-label="Database Management and Data Cleaning project">
+                <div class="project-image">
+                    <div class="story-map-container">
+                        <div class="story-map-loading">Loading Database Management Story Map...</div>
+                        <iframe 
+                            src="https://storymaps.arcgis.com/stories/a7372bb82f594f3b94e0ea194fa7978d" 
+                            class="story-map-iframe"
+                            title="Database Management Story Map - Data Cleaning Process"
+                            loading="lazy">
+                        </iframe>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h2>Database Management & Data Cleaning – Hunt Block Program</h2>
+                    <div class="project-overview">
+                        <h3>Project Overview</h3>
+                        <p>
+                            I developed a comprehensive database management system for Quinte Conservation's Hunt Block program using Microsoft Access. This project involved migrating legacy spreadsheet data into a structured relational database, implementing robust data validation, and creating automated workflows for customer management and hunt block assignments.
+                        </p>
+                    </div>
+
+                    <div class="project-process">
+                        <h3>Database Design & ETL Process</h3>
+                        <div class="process-steps">
+                            <div class="step-item">
+                                <h4>Schema Design & Data Import</h4>
+                                <p>Created structured schema in Access with proper relationships, combo box domains for data integrity, and automated the import process from legacy spreadsheets into normalized tables.</p>
+                            </div>
+                            <div class="step-item">
+                                <h4>Duplicate Detection & Cleanup</h4>
+                                <p>Used SQL statements with DISTINCT functions to identify and eliminate duplicate records, ensuring clean data migration from the original Hunt Block spreadsheet system.</p>
+                            </div>
+                            <div class="step-item">
+                                <h4>Data Validation Implementation</h4>
+                                <p>Implemented comprehensive validation rules including email format validation using pattern matching and null value handling for critical fields like names and contact information.</p>
+                            </div>
+                            <div class="step-item">
+                                <h4>Quality Assurance Queries</h4>
+                                <p>Developed complex SQL queries to identify missing hunt blocks, invalid contact information, and data inconsistencies across related tables for ongoing quality control.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-features">
+                        <h3>SQL Scripts & Data Cleaning Examples</h3>
+                        <div class="features-grid">
+                            <div class="feature-item">
+                                <h4>Email Validation Query</h4>
+                                <p>Implemented pattern matching validation: <code>Is Null Or ((ALike "%_@_%._%") And (Not ALike "%[ ,;]%"))</code> to ensure proper email format and prevent invalid entries.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Comprehensive Data Quality Check</h4>
+                                <p>Created multi-table validation queries checking hunt block existence, name completeness, postal code length, phone number format, and email validity across all customer records.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>ETL Data Integration</h4>
+                                <p>Developed INSERT statements with INNER JOINs to populate the customer table with cleaned data from multiple sources, ensuring referential integrity throughout the migration process.</p>
+                            </div>
+                            <div class="feature-item">
+                                <h4>Hunt Block Assignment Logic</h4>
+                                <p>Created SQL queries to identify available hunt blocks and manage customer assignments, preventing conflicts and ensuring optimal resource allocation.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-results">
+                        <h3>Advanced Form Development & User Interface</h3>
+                        <p>
+                            Beyond data cleaning, I developed sophisticated Access forms with VBA programming to streamline user workflows. The customer management interface features intelligent search functionality, record navigation dialogs, and automated hunt block assignment with real-time availability checking.
+                        </p>
+                        <p>
+                            Key VBA implementations include error handling for data entry operations, dynamic combo box population based on available hunt blocks, confirmation dialogs for critical operations like customer detachment, and automated record position tracking. The system also features comprehensive search capabilities across multiple fields with filter management and result navigation.
+                        </p>
+                        <div class="impact-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">95%</span>
+                                <span class="stat-label">Data Quality Improvement</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">75%</span>
+                                <span class="stat-label">Processing Time Reduction</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Referential Integrity</span>
+                            </div>
+                        </div>
+                        <p>
+                            The database system now provides complete audit trails for all customer interactions, maintains data integrity through validation rules and relationship constraints, and offers staff an intuitive interface for managing hunt block assignments. This solution transformed a manual, error-prone spreadsheet system into a robust, automated database that supports Conservation's operational requirements while ensuring data accuracy and regulatory compliance.
+                        </p>
+                    </div>
+
+                    <a href="[YOUR_STORY_MAP_URL_HERE]" target="_blank" rel="noopener noreferrer">
+                        <button class="project-button" aria-label="Open database management story map in full screen">View Story Map in Full Screen</button>
+                    </a>
+                </div>
+            </section>
 
             <div class="project-results">
                 <h3>Results & Workflow Improvement</h3>
